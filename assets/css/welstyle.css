@@ -1,0 +1,92 @@
+* {
+	outline: none !important;
+}
+
+.garis-topbar {
+	width: 0;
+	border-right: 1px solid #e3e6f0;
+	height: calc(4.375rem - 2rem);
+	margin: auto 1rem;
+	display: block !important;
+}
+
+/* Sidebar collapse test */
+.collapsibleX {
+	color: white;
+	cursor: pointer;
+	/* padding: 18px; */
+	/* width: 100%;
+	text-align: left;
+	outline: none; */
+	/* font-size: 15px; */
+	/* border: none; */
+}
+
+.activeX,
+.collapsibleX:hover {
+	background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+	color: #ffffff !important;
+	/* outline: none;
+	border: none; */
+}
+
+.collapsibleX:after {
+	content: "\002B";
+	color: white;
+	font: 1rem bold;
+	float: right;
+	margin-right: 10px;
+	outline: none;
+	border: none;
+}
+
+.activeX:after {
+	content: "\2212";
+	outline: none;
+	border: none;
+}
+
+.contentX {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	/* background-color: #f1f1f1; */
+	outline: none;
+	border: none;
+}
+
+.contentX li {
+	box-sizing: border-box !important;
+	margin-top: 0px;
+	margin-left: 5px;
+	list-style: none;
+	padding: 10px !important;
+	/* background-color: sandybrown; */
+	height: 40px !important;
+}
+
+.contentX li:last-child {
+	margin-bottom: 10px;
+}
+.contentX li a {
+	display: block;
+	color: #ffffff !important;
+	cursor: pointer;
+	/* background-color: seagreen; */
+}
+
+.contentXactive {
+	border: 1px solid rgb(43, 255, 0);
+	border-radius: 10px;
+	padding: 0 0 0 5px;
+}
+
+.card {
+	border-left: 10px solid #0586ff !important;
+}
+
+p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
